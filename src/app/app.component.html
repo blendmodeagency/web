@@ -1,0 +1,4 @@
+<main  [@animRoutes]="animationState" #main>
+  <header blend-menu></header>
+  <router-outlet blend-cursor [mainLayer]="main" (activate)="onActivate($event)"></router-outlet>
+</main>

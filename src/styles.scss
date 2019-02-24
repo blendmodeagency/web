@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,800,900');
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+*{
+  font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  text-decoration: none;
+  outline: none;
+  line-height: 1.2;
+  user-select: none;
+  cursor: url(/assets/img/cursor.png) 3 3,auto !important;
+  cursor: -webkit-image-set(url(/assets/img/cursor.png) 1x, url(/assets/img/cursorx2.png) 2x) 3 3,pointer !important;
+
+}
+html{
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  color: $black;
+}
+a{
+  color: #3c7173;
+  font-weight: 600;
+}
+.color-in{
+  transition: all 300ms;
+  &:hover{
+    color:$cursor;
+  }
+}
