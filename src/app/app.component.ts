@@ -17,7 +17,7 @@ import { right, left } from './shared/animations/level1';
 export class AppComponent {
 
   private components: Array<any> = COMPONENTS;
-  private animationState: number;
+  public animationState: number;
 
   onActivate($event) {
     this.components.forEach( (solution, index) => {
